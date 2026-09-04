@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DANIEL — We Build Digital Solutions That Power Your Business Forward</title>
+  <meta name="description" content="Daniel transforms ideas into powerful websites, web applications, mobile apps, intelligent systems, POS solutions, and digital experiences built with beautiful design and advanced technology.">
+  
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" type="image/png" href="assets/daniel-logo.png">
+  
+  <!-- Google Fonts: Editorial Serif & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="index.css?v=15">
+</head>
+<body>
+  <div class="page-container">
+    
+    <!-- Site Header / Minimalist Navigation -->
+    <header class="site-header">
+      <a href="#" class="brand-wrapper" aria-label="DANIEL Home">
+        <img src="assets/daniel-logo.png" alt="DANIEL Logo" class="brand-logo-img" width="44" height="44">
+        <span class="brand-wordmark">DANIEL</span>
+      </a>
+
+      <!-- Centered Navigation (Desktop) -->
+      <nav class="nav-container" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#work" class="nav-link" id="navWorkBtn">Work</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Actions: Desktop Contact + Mobile Hamburger -->
+      <div class="header-action">
+        <button type="button" class="btn-contact" id="openContactBtn" aria-label="Contact Us">
+          Contact Us
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+
+        <!-- Mobile Navigation Toggle Button -->
+        <button type="button" class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+          <span class="hamburger-box">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer & Backdrop -->
+    <div class="mobile-nav-backdrop" id="mobileNavBackdrop" aria-hidden="true"></div>
+    <aside class="mobile-nav-drawer" id="mobileNavDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation" aria-hidden="true">
+      <div class="mobile-nav-header">
+        <a href="#" class="brand-wrapper" aria-label="DANIEL Home">
+          <img src="assets/daniel-logo.png" alt="DANIEL Logo" class="brand-logo-img" width="38" height="38">
+          <span class="brand-wordmark">DANIEL</span>
+        </a>
+        <button type="button" class="btn-close-mobile-nav" id="closeMobileNavBtn" aria-label="Close navigation menu">✕</button>
+      </div>
+
+      <nav class="mobile-nav-body" aria-label="Mobile Navigation Menu">
+        <ul class="mobile-nav-list">
+          <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#process" class="mobile-nav-link">Process</a></li>
+          <li><a href="#services" class="mobile-nav-link">Services</a></li>
+          <li><a href="#work" class="mobile-nav-link">Work</a></li>
+          <li><a href="#products" class="mobile-nav-link">Products</a></li>
+          <li><a href="#testimonials" class="mobile-nav-link">Reviews</a></li>
+          <li><a href="#pricing" class="mobile-nav-link">Pricing</a></li>
+          <li><a href="#blog" class="mobile-nav-link">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-nav-footer">
+        <button type="button" class="btn-primary-cta mobile-cta-full" id="mobileCtaStartBtn">
+          Start Your Project
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-nav-contact-strip">
+          <a href="mailto:info@daniel.com" class="mobile-contact-link">info@daniel.com</a>
+          <span class="dot-sep">•</span>
+          <a href="tel:+9647501234567" class="mobile-contact-link">+964 750 123 4567</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Hero Section (16:9 Desktop Studio Showcase) -->
+    <main class="hero-master" id="home">
+      
+      <!-- Seamless Environmental Backdrop -->
+      <div class="hero-environment">
+        <div class="showroom-backdrop"></div>
+        <div class="ambient-glow-lighting"></div>
+      </div>
+
+      <div class="hero-content-grid">
+        
+        <!-- Left Column: Communication & CTAs -->
+        <section class="hero-left-column">
+          
+          <!-- Small Premium Pill Badge -->
+          <div class="pill-badge">
+            <span class="pill-dot"></span>
+            <span class="pill-text">Software Solutions That Scale</span>
+          </div>
+
+          <!-- Main Editorial Headline -->
+          <h1 class="hero-headline">
+            We build digital<br>
+            solutions that power<br>
+            your&nbsp;<span class="gradient-text">business&nbsp;forward.</span>
+          </h1>
+
+          <!-- Body Copy -->
+          <p class="hero-subheadline">
+            Daniel transforms ideas into powerful websites, web applications, mobile apps, intelligent systems, POS solutions, and digital experiences built with beautiful design and advanced technology.
+          </p>
+
+          <!-- Interactive Action Buttons -->
+          <div class="hero-cta-group">
+            <button type="button" class="btn-primary-cta" id="heroStartProjectBtn">
+              Start Your Project
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+
+            <button type="button" class="btn-secondary-cta" id="heroViewWorkBtn">
+              View Our Work
+              <span class="play-icon-pill">▶</span>
+            </button>
+          </div>
+
+          <!-- Responsive 3D DANIEL Sculpture (Dedicated for Mobile & Tablet Hierarchy) -->
+          <div class="responsive-hero-sculpture" id="responsiveHeroSculpture" aria-label="DANIEL 3D Brand Ribbon Sculpture">
+            <div class="sculpture-showcase-wrap">
+              <div class="sculpture-glow-ambient"></div>
+              <img src="assets/daniel-3d-mobile-sculpture.png" alt="DANIEL 3D Ribbon Logo Sculpture on Illuminated Dais" class="responsive-sculpture-img" width="422" height="380" loading="eager">
+              <!-- Architectural Window Tag -->
+              <div class="architectural-window-tag" aria-hidden="true">
+                <span class="neon-light-strip"></span>
+                <div class="window-tag-words">
+                  <span>BIGGER</span>
+                  <span>IDEAS</span>
+                  <span>BRIGHTER</span>
+                  <span>TOMORROW</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trusted Companies Strip -->
+          <div class="trusted-companies-strip">
+            <span class="trusted-label">Trusted by Innovative Companies</span>
+            <div class="client-logos-row">
+              <span class="client-item client-aamuse">AAMUSE</span>
+              <span class="client-separator">•</span>
+              <span class="client-item client-flare">Flare</span>
+              <span class="client-separator">•</span>
+              <span class="client-item client-techtorch">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+                TECH TORCH
+              </span>
+              <span class="client-separator">•</span>
+              <span class="client-item client-lavora">&amp; LAVORA</span>
+              <span class="client-separator">•</span>
+              <span class="client-item client-fabloo">
+                <span class="script-f">f</span>abloo Beauty
+              </span>
+            </div>
+          </div>
+
+          <!-- Responsive Supporting Interface Cards (Tablet & Mobile Secondary Content) -->
+          <div class="responsive-interface-preview" id="responsiveInterfacePreview">
+            <!-- Card 1: Mobile Applications -->
+            <div class="resp-mini-card resp-card-mobile" data-service="mobile-apps">
+              <div class="resp-card-header">
+                <div class="resp-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
+                </div>
+                <div class="resp-card-meta">
+                  <div class="resp-card-title">Mobile Applications</div>
+                  <div class="resp-card-subtitle">iOS &amp; Android Ecosystems</div>
+                </div>
+                <span class="resp-card-pill">+42.8%</span>
+              </div>
+            </div>
+
+            <!-- Card 2: POS Solutions -->
+            <div class="resp-mini-card resp-card-pos" data-service="pos-solutions">
+              <div class="resp-card-header">
+                <div class="resp-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <line x1="2" y1="10" x2="22" y2="10"></line>
+                  </svg>
+                </div>
+                <div class="resp-card-meta">
+                  <div class="resp-card-title">POS Solutions</div>
+                  <div class="resp-card-subtitle">Cloud Terminal Mesh</div>
+                </div>
+                <span class="resp-card-pill">Enterprise</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Scroll To Explore Indicator -->
+          <div class="mobile-scroll-indicator" aria-hidden="true">
+            <div class="scroll-mouse-pill">
+              <span class="scroll-wheel-dot"></span>
+            </div>
+            <span class="scroll-explore-text">SCROLL TO EXPLORE</span>
+          </div>
+
+        </section>
+
+        <!-- Right Column: Futuristic Showroom & Interactive Floating Panels -->
+        <section class="hero-right-column" id="showroomViewport">
+          <div class="showroom-stage" id="showroomStage">
+            
+            <!-- Sculpture dais accent glow & dimensional star sparkle -->
+            <div class="sculpture-anchor" id="sculptureHotspot" title="DANIEL 3D Brand Sculpture">
+              <div class="sculpture-glow-ring"></div>
+              <div class="dimensional-star-sparkle">
+                <svg viewBox="0 0 32 32" fill="none">
+                  <polygon points="16,2 19,12 29,16 19,20 16,30 13,20 3,16 13,12" fill="#D8E8F8" opacity="0.95" />
+                  <circle cx="16" cy="16" r="3.5" fill="#FFFFFF" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Panel 1: Upper Left - Web Development -->
+            <div class="glass-panel panel-web-dev" data-service="web-dev" id="panelWebDev">
+              <div class="panel-header">
+                <svg class="panel-icon-svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                <span class="panel-title">Web Development</span>
+                <span class="panel-badge-pill" id="webDevStatusBadge">Live</span>
+              </div>
+              <div class="web-dev-preview">
+                <div class="browser-bar">
+                  <div class="browser-dots">
+                    <span class="b-dot red"></span>
+                    <span class="b-dot yellow"></span>
+                    <span class="b-dot green"></span>
+                  </div>
+                  <span class="browser-address">daniel.io/architecture</span>
+                  <span id="webDevSpeedMetric" style="margin-left: auto; font-size: 0.54rem; color: #10b981; font-weight: 700;">⚡ 14ms</span>
+                </div>
+                <div class="browser-content-mock">
+                  <div class="mock-hero-banner">
+                    <div class="mock-banner-line"></div>
+                    <div class="mock-banner-subline"></div>
+                  </div>
+                  <div class="mock-cards-row">
+                    <div class="mock-mini-card"></div>
+                    <div class="mock-mini-card"></div>
+                    <div class="mock-mini-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel 2: Lower Left - Mobile Applications -->
+            <div class="glass-panel panel-mobile-apps" data-service="mobile-apps" id="panelMobileApps">
+              <div class="panel-header">
+                <svg class="panel-icon-svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+                <span class="panel-title">Mobile Applications</span>
+              </div>
+              <div class="mobile-device-mock">
+                <div class="phone-outer-shell">
+                  <div class="phone-screen">
+                    <div class="phone-notch"></div>
+                    <div class="phone-balance-card">
+                      <div class="phone-bal-label">Portfolio Analytics</div>
+                      <div class="phone-bal-val" id="mobileAnalyticsVal">+42.8%</div>
+                    </div>
+                    <div class="phone-chart-bars" id="phoneChartBars">
+                      <div class="phone-bar" style="height: 35%;"></div>
+                      <div class="phone-bar" style="height: 55%;"></div>
+                      <div class="phone-bar" style="height: 45%;"></div>
+                      <div class="phone-bar active" style="height: 85%;"></div>
+                      <div class="phone-bar" style="height: 60%;"></div>
+                      <div class="phone-bar" style="height: 75%;"></div>
+                    </div>
+                    <div class="phone-dock">
+                      <span class="dock-icon-dot active"></span>
+                      <span class="dock-icon-dot"></span>
+                      <span class="dock-icon-dot"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel 3: Upper Right - POS Solutions -->
+            <div class="glass-panel panel-pos-solutions" data-service="pos-solutions" id="panelPosSolutions">
+              <div class="panel-header">
+                <svg class="panel-icon-svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <line x1="2" y1="10" x2="22" y2="10"></line>
+                </svg>
+                <span class="panel-title">POS Solutions</span>
+                <span class="panel-badge-pill">Enterprise</span>
+              </div>
+              <div class="pos-dashboard-mock">
+                <div class="pos-metrics-grid">
+                  <div class="pos-metric-card">
+                    <div class="pos-metric-title">Gross Volume</div>
+                    <div class="pos-metric-number" id="posGrossVolume">$148,290</div>
+                    <div class="pos-metric-growth" id="posGrossGrowth">+18.4%</div>
+                  </div>
+                  <div class="pos-metric-card">
+                    <div class="pos-metric-title">Transactions</div>
+                    <div class="pos-metric-number" id="posTransactions">3,842</div>
+                    <div class="pos-metric-growth" id="posTransGrowth">+9.2%</div>
+                  </div>
+                </div>
+                <div class="pos-chart-container">
+                  <div class="pos-chart-title-row">
+                    <span>Terminal Throughput</span>
+                    <span id="posPeakThroughput">Peak 98.4%</span>
+                  </div>
+                  <div class="pos-bar-track">
+                    <div class="pos-bar-fill" id="posThroughputBar" style="width: 82%;"></div>
+                  </div>
+                  <div class="pos-order-item">
+                    <span id="posOrderItem">Order #8492 • POS-East</span>
+                    <span class="pos-status-badge" id="posOrderBadge">Processed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel 4: Middle Right - System Integrations -->
+            <div class="glass-panel panel-system-integrations" data-service="system-integrations" id="panelSystemIntegrations">
+              <div class="panel-header">
+                <svg class="panel-icon-svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                <span class="panel-title">System Integrations</span>
+                <span class="panel-badge-pill">Sync</span>
+              </div>
+              <div class="system-node-canvas-wrapper">
+                <canvas id="nodeCanvas" width="200" height="90"></canvas>
+                <div class="node-stats-footer">
+                  <span class="node-status-online" id="nodeOnlineStatus">Operational</span>
+                  <span id="nodeTelemetryMetric">12ms • 99.99%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel 5: Lower Right - Audio Solutions -->
+            <div class="glass-panel panel-audio-solutions" data-service="audio-solutions" id="panelAudioSolutions">
+              <div class="panel-header">
+                <svg class="panel-icon-svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                </svg>
+                <span class="panel-title">Audio Solutions</span>
+              </div>
+              <div class="audio-wave-wrapper">
+                <canvas id="audioWaveCanvas" width="220" height="60"></canvas>
+                <div class="audio-controls-row">
+                  <button type="button" class="btn-audio-toggle" id="toggleAudioWaveBtn">
+                    <span id="audioPlayIcon">❚❚</span>
+                    <span id="audioStatusText">Live Feed</span>
+                  </button>
+                  <span class="audio-sample-rate" id="audioTelemetry"><span id="audioDbLevel">-14.2 dB</span> • 96kHz</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- SECTION 2: ABOUT US + FINAL CTA BANNER -->
+    <section class="about-section" id="about" aria-labelledby="aboutHeading">
+      <div class="about-container">
+        
+        <!-- Upper Section: About Us Two-Column Grid (42% Text / 58% Office) -->
+        <div class="about-upper-grid">
+          
+          <!-- Left Column: Copy, Key Principles & Meet Our Team CTA -->
+          <div class="about-left-col">
+            
+            <!-- Eyebrow Pill Label -->
+            <div class="about-eyebrow-badge">
+              <span class="eyebrow-text">ABOUT US</span>
+            </div>
+
+            <!-- Main Editorial Serif Headline -->
+            <h2 class="about-headline" id="aboutHeading">
+              A team of creators,<br>
+              thinkers and builders.
+            </h2>
+
+            <!-- Supporting Paragraph -->
+            <p class="about-supporting-text">
+              We’re a passionate team of designers, developers and strategists who love building digital products that make a real difference.
+            </p>
+
+            <!-- 3 Benefit Rows with Subtle Circular Check Icons -->
+            <ul class="about-benefits-list" aria-label="Key team principles">
+              <li class="benefit-item">
+                <div class="benefit-icon-wrap" aria-hidden="true">
+                  <svg class="benefit-check-svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="4 10 8 14 16 6"></polyline>
+                  </svg>
+                </div>
+                <span class="benefit-label">Passionate about technology</span>
+              </li>
+
+              <li class="benefit-item">
+                <div class="benefit-icon-wrap" aria-hidden="true">
+                  <svg class="benefit-check-svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="4 10 8 14 16 6"></polyline>
+                  </svg>
+                </div>
+                <span class="benefit-label">Focused on quality</span>
+              </li>
+
+              <li class="benefit-item">
+                <div class="benefit-icon-wrap" aria-hidden="true">
+                  <svg class="benefit-check-svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="4 10 8 14 16 6"></polyline>
+                  </svg>
+                </div>
+                <span class="benefit-label">Committed to your success</span>
+              </li>
+            </ul>
+
+            <!-- Compact Primary Button -->
+            <div class="about-btn-wrap">
+              <button type="button" class="btn-meet-team" id="aboutMeetTeamBtn">
+                Meet Our Team
+                <span class="btn-arrow">→</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Daniel Office Boardroom (58% proportion) -->
+          <div class="about-right-col">
+            <div class="office-showcase-frame" title="DANIEL Studio Headquarters">
+              <img src="assets/daniel-boardroom.jpg?v=3" alt="DANIEL Headquarters Boardroom with illuminated wall emblem" class="office-showcase-img" loading="lazy">
+              <div class="office-frame-glow"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Lower Section: Final CTA Banner (Wide rounded rectangular container) -->
+        <div class="final-cta-banner" id="contactBanner">
+          
+          <!-- Subtle radial orbital lines background graphics -->
+          <div class="cta-orbital-lines" aria-hidden="true">
+            <div class="orbital-ring ring-1"></div>
+            <div class="orbital-ring ring-2"></div>
+            <div class="orbital-ring ring-3"></div>
+          </div>
+
+          <div class="final-cta-inner-grid">
+            
+            <!-- Left Content: Headline, Subtext & Light Button (55% proportion) -->
+            <div class="cta-left-content">
+              <h3 class="cta-headline">
+                Ready to start your<br>
+                next project with Daniel?
+              </h3>
+              <p class="cta-subtext">
+                Let’s build something amazing together.
+              </p>
+              <button type="button" class="btn-cta-light" id="ctaGetInTouchBtn">
+                Get In Touch
+                <span class="cta-arrow">→</span>
+              </button>
+            </div>
+
+            <!-- Right Visual: 3D Daniel Brand Ribbon Sculpture (45% proportion) -->
+            <div class="cta-right-visual" aria-hidden="true">
+              <div class="sculpture-visual-wrapper">
+                <img src="assets/daniel-3d-sculpture.jpg?v=3" alt="DANIEL 3D Brand Sculpture" class="sculpture-img" loading="lazy">
+                <div class="sculpture-glow-ambient"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: OUR PROCESS (Simple steps, powerful results) -->
+    <section class="process-section" id="process">
+      <div class="process-container">
+        
+        <!-- Center-Aligned Section Header -->
+        <div class="process-header">
+          <span class="process-label">Our Process</span>
+          <h2 class="process-title">Simple steps, powerful results.</h2>
+          <p class="process-subtitle">
+            Our proven process ensures your project is delivered on time, on budget, and beyond expectations.
+          </p>
+        </div>
+
+        <!-- Horizontal 5-Step Process Timeline -->
+        <div class="process-timeline">
+          
+          <!-- Thin horizontal connecting track line -->
+          <div class="timeline-track-line"></div>
+          
+          <!-- Subtle diamond accents between steps -->
+          <div class="timeline-node-accent timeline-accent-1"></div>
+          <div class="timeline-node-accent timeline-accent-2"></div>
+          <div class="timeline-node-accent timeline-accent-3"></div>
+          <div class="timeline-node-accent timeline-accent-4"></div>
+
+          <!-- Step 01: Discover -->
+          <div class="process-step-item" id="stepDiscover">
+            <div class="step-circle-node">
+              <svg class="step-svg-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- 4-petal insight aperture symbol matching reference -->
+                <circle cx="12" cy="12" r="3.5" fill="rgba(86,136,232,0.12)"></circle>
+                <circle cx="20" cy="12" r="3.5" fill="rgba(86,136,232,0.12)"></circle>
+                <circle cx="12" cy="20" r="3.5" fill="rgba(86,136,232,0.12)"></circle>
+                <circle cx="20" cy="20" r="3.5" fill="rgba(86,136,232,0.12)"></circle>
+                <circle cx="16" cy="16" r="1.5" fill="#5688E8"></circle>
+              </svg>
+            </div>
+            <div class="step-number">01</div>
+            <h3 class="step-title">Discover</h3>
+            <p class="step-desc">We understand your business, goals and requirements.</p>
+          </div>
+
+          <!-- Step 02: Plan -->
+          <div class="process-step-item" id="stepPlan">
+            <div class="step-circle-node">
+              <svg class="step-svg-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Architectural dome & structure matching reference -->
+                <path d="M8 25 L8 16 C8 11.58 11.58 8 16 8 C20.42 8 24 11.58 24 16 L24 25"></path>
+                <line x1="12" y1="12" x2="12" y2="25"></line>
+                <line x1="16" y1="8" x2="16" y2="25"></line>
+                <line x1="20" y1="12" x2="20" y2="25"></line>
+                <circle cx="16" cy="5.5" r="1.5" fill="#5688E8"></circle>
+              </svg>
+            </div>
+            <div class="step-number">02</div>
+            <h3 class="step-title">Plan</h3>
+            <p class="step-desc">We plan the solution, strategy and architecture.</p>
+          </div>
+
+          <!-- Step 03: Design -->
+          <div class="process-step-item" id="stepDesign">
+            <div class="step-circle-node">
+              <svg class="step-svg-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Geometric design clover matching reference -->
+                <circle cx="16" cy="10" r="4" fill="rgba(86,136,232,0.08)"></circle>
+                <circle cx="16" cy="22" r="4" fill="rgba(86,136,232,0.08)"></circle>
+                <circle cx="10" cy="16" r="4" fill="rgba(86,136,232,0.08)"></circle>
+                <circle cx="22" cy="16" r="4" fill="rgba(86,136,232,0.08)"></circle>
+                <circle cx="16" cy="16" r="2.5" fill="#5688E8"></circle>
+              </svg>
+            </div>
+            <div class="step-number">03</div>
+            <h3 class="step-title">Design</h3>
+            <p class="step-desc">We design beautiful UI/UX that users will love.</p>
+          </div>
+
+          <!-- Step 04: Develop -->
+          <div class="process-step-item" id="stepDevelop">
+            <div class="step-circle-node">
+              <svg class="step-svg-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Code & system card matching reference -->
+                <rect x="7" y="6" width="18" height="20" rx="4"></rect>
+                <polyline points="11 14 9 16 11 18"></polyline>
+                <polyline points="21 14 23 16 21 18"></polyline>
+                <line x1="18" y1="12" x2="14" y2="20"></line>
+              </svg>
+            </div>
+            <div class="step-number">04</div>
+            <h3 class="step-title">Develop</h3>
+            <p class="step-desc">We build with clean code and modern technologies.</p>
+          </div>
+
+          <!-- Step 05: Deliver -->
+          <div class="process-step-item" id="stepDeliver">
+            <div class="step-circle-node">
+              <svg class="step-svg-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Screen deployment launch insignia matching reference -->
+                <rect x="6" y="6" width="20" height="20" rx="5"></rect>
+                <polygon points="14,11 20,16 14,21" fill="rgba(86,136,232,0.2)"></polygon>
+              </svg>
+            </div>
+            <div class="step-number">05</div>
+            <h3 class="step-title">Deliver</h3>
+            <p class="step-desc">We test, deploy and support your success.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: WHAT WE DO / SERVICES (Complete digital solutions for every business need.) -->
+    <section class="services-section" id="services" aria-labelledby="servicesHeading">
+      <div class="services-container">
+        
+        <!-- Center-Aligned Section Header -->
+        <div class="services-header">
+          <!-- Small Eyebrow Label -->
+          <div class="services-eyebrow-badge">
+            <span class="eyebrow-text">WHAT WE DO</span>
+          </div>
+
+          <!-- Main Headline in Refined Serif -->
+          <h2 class="services-title" id="servicesHeading">
+            Complete digital solutions<br>for every business need.
+          </h2>
+
+          <!-- Clean Supporting Subtitle -->
+          <p class="services-subtitle">
+            We design, build and deliver digital products that help your business work smarter and grow faster.
+          </p>
+        </div>
+
+        <!-- 6-Card Services Grid (3x2 Layout) -->
+        <div class="services-grid" role="region" aria-label="Digital Services">
+          
+          <!-- Card 1: Web Development -->
+          <article class="service-card" id="serviceCardWebDev" data-service="Website Development">
+            <div class="service-icon-badge" aria-hidden="true">
+              <svg class="service-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="3"></rect>
+                <line x1="2" y1="8" x2="22" y2="8"></line>
+                <circle cx="5" cy="5.5" r="0.75" fill="currentColor"></circle>
+                <circle cx="7.5" cy="5.5" r="0.75" fill="currentColor"></circle>
+                <circle cx="10" cy="5.5" r="0.75" fill="currentColor"></circle>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Web Development</h3>
+            <p class="service-card-desc">Modern, fast and responsive websites that represent your brand perfectly.</p>
+          </article>
+
+          <!-- Card 2: Web Applications -->
+          <article class="service-card" id="serviceCardWebApps" data-service="Web Applications">
+            <div class="service-icon-badge" aria-hidden="true">
+              <svg class="service-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="8" height="8" rx="2"></rect>
+                <rect x="13" y="3" width="8" height="5" rx="2"></rect>
+                <rect x="13" y="10" width="8" height="11" rx="2"></rect>
+                <rect x="3" y="13" width="8" height="8" rx="2"></rect>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Web Applications</h3>
+            <p class="service-card-desc">Powerful web applications built for performance, scalability and real business needs.</p>
+          </article>
+
+          <!-- Card 3: Mobile Applications -->
+          <article class="service-card" id="serviceCardMobileApps" data-service="Mobile Applications">
+            <div class="service-icon-badge" aria-hidden="true">
+              <svg class="service-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="2" width="12" height="20" rx="3.5"></rect>
+                <line x1="10" y1="18" x2="14" y2="18"></line>
+                <circle cx="12" cy="5" r="0.75" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Mobile Applications</h3>
+            <p class="service-card-desc">Native and cross-platform mobile applications for iOS and Android.</p>
+          </article>
+
+          <!-- Card 4: Custom Systems -->
+          <article class="service-card" id="serviceCardCustomSystems" data-service="Custom Business Systems">
+            <div class="service-icon-badge" aria-hidden="true">
+              <svg class="service-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7" rx="2"></rect>
+                <rect x="14" y="3" width="7" height="7" rx="2"></rect>
+                <rect x="14" y="14" width="7" height="7" rx="2"></rect>
+                <rect x="3" y="14" width="7" height="7" rx="2"></rect>
+                <line x1="10" y1="6.5" x2="14" y2="6.5"></line>
+                <line x1="10" y1="17.5" x2="14" y2="17.5"></line>
+                <line x1="6.5" y1="10" x2="6.5" y2="14"></line>
+                <line x1="17.5" y1="10" x2="17.5" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Custom Systems</h3>
+            <p class="service-card-desc">Tailored digital systems that automate processes and improve business efficiency.</p>
+          </article>
+
+          <!-- Card 5: POS Solutions -->
+          <article class="service-card" id="serviceCardPosSolutions" data-service="POS Solutions">
+            <div class="service-icon-badge" aria-hidden="true">
+              <svg class="service-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="20" r="1.5"></circle>
+                <circle cx="18" cy="20" r="1.5"></circle>
+                <path d="M3 3h3l2.6 12.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L22 6H6"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">POS Solutions</h3>
+            <p class="service-card-desc">Smart POS systems for retail, restaurants and growing businesses.</p>
+          </article>
+
+          <!-- Card 6: UI/UX Design -->
+          <article class="service-card" id="serviceCardUiUxDesign" data-service="UI/UX Design">
+            <div class="service-icon-badge" aria-hidden="true">
+              <svg class="service-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="9" r="5.5"></circle>
+                <circle cx="15" cy="15" r="5.5"></circle>
+                <path d="M12.9 11.1a5.45 5.45 0 0 0-1.8 1.8"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">UI/UX Design</h3>
+            <p class="service-card-desc">Beautiful, user-centered digital experiences designed for clarity, usability and impact.</p>
+          </article>
+
+        </div>
+
+        <!-- Centered CTA Button Below Grid -->
+        <div class="services-cta-wrap">
+          <button type="button" class="btn-explore-services" id="exploreAllServicesBtn">
+            Explore All Services
+            <span class="cta-arrow">→</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: OUR WORK / PROJECTS (Projects that speak for our quality) -->
+    <section class="work-section" id="work" aria-labelledby="workHeading">
+      <div class="work-container">
+        
+        <!-- Header Row: Top-Left Eyebrow & Editorial Headline + Top-Right CTA -->
+        <div class="work-header-row">
+          <div class="work-header-left">
+            <div class="work-eyebrow-pill">
+              <span class="work-eyebrow-text">OUR WORK</span>
+            </div>
+            <h2 class="work-headline" id="workHeading">
+              Projects that speak<br>for our quality.
+            </h2>
+          </div>
+
+          <div class="work-header-right">
+            <button type="button" class="btn-view-projects" id="workViewAllBtn" aria-label="View All Projects">
+              <span>View All Projects</span>
+              <svg class="cta-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Horizontal Row of Project Cards (4 Full Cards + 1 Partial 5th Card) -->
+        <div class="work-carousel-wrapper">
+          <div class="work-carousel-track" id="workTrack" role="region" aria-label="Selected Projects Carousel">
+            
+            <!-- Project 1: Lavora Clinic -->
+            <article class="work-card" id="projectCardLavora" data-project="Lavora Clinic">
+              <div class="work-card-inner">
+                <div class="work-thumb-frame">
+                  <img src="assets/work-lavora.jpg" alt="Lavora Clinic - Website Development for Aesthetic Medical Clinic" class="work-thumb-img" loading="lazy">
+                  <div class="work-thumb-overlay"></div>
+                </div>
+                <div class="work-card-content">
+                  <h3 class="work-project-title">Lavora Clinic</h3>
+                  <div class="work-project-meta">
+                    <span class="work-category">Website Development</span>
+                    <span class="work-tag">Web</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Twin Tower -->
+            <article class="work-card" id="projectCardTwinTower" data-project="Twin Tower">
+              <div class="work-card-inner">
+                <div class="work-thumb-frame">
+                  <img src="assets/work-twin-tower.jpg" alt="Twin Tower - Mobile Application for Luxury Building Management" class="work-thumb-img" loading="lazy">
+                  <div class="work-thumb-overlay"></div>
+                </div>
+                <div class="work-card-content">
+                  <h3 class="work-project-title">Twin Tower</h3>
+                  <div class="work-project-meta">
+                    <span class="work-category">Mobile Application</span>
+                    <span class="work-tag">Mobile</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Flore Flower Shop -->
+            <article class="work-card" id="projectCardFlore" data-project="Flore Flower Shop">
+              <div class="work-card-inner">
+                <div class="work-thumb-frame">
+                  <img src="assets/work-flore.jpg" alt="Flore Flower Shop - E-commerce Website for Premium Lifestyle Brand" class="work-thumb-img" loading="lazy">
+                  <div class="work-thumb-overlay"></div>
+                </div>
+                <div class="work-card-content">
+                  <h3 class="work-project-title">Flore Flower Shop</h3>
+                  <div class="work-project-meta">
+                    <span class="work-category">E-commerce Website</span>
+                    <span class="work-tag">Web</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: Amuse Cosmetics -->
+            <article class="work-card" id="projectCardAmuse" data-project="Amuse Cosmetics">
+              <div class="work-card-inner">
+                <div class="work-thumb-frame">
+                  <img src="assets/work-amuse.jpg" alt="Amuse Cosmetics - Dark Editorial Website Development" class="work-thumb-img" loading="lazy">
+                  <div class="work-thumb-overlay"></div>
+                </div>
+                <div class="work-card-content">
+                  <h3 class="work-project-title">Amuse Cosmetics</h3>
+                  <div class="work-project-meta">
+                    <span class="work-category">Website Development</span>
+                    <span class="work-tag">Web</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 5 (Partially Visible): Aura Sound DSP -->
+            <article class="work-card work-card-partial" id="projectCardAura" data-project="Aura Sound DSP">
+              <div class="work-card-inner">
+                <div class="work-thumb-frame">
+                  <img src="assets/work-aura.jpg" alt="Aura Sound DSP - System Architecture Audio Technology" class="work-thumb-img" loading="lazy">
+                  <div class="work-thumb-overlay"></div>
+                </div>
+                <div class="work-card-content">
+                  <h3 class="work-project-title">Aura Sound DSP</h3>
+                  <div class="work-project-meta">
+                    <span class="work-category">System Architecture</span>
+                    <span class="work-tag">Audio</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+          <div class="work-track-fade-mask" aria-hidden="true"></div>
+        </div>
+
+        <!-- Carousel Indicators: 5 Minimal Understated Dots -->
+        <div class="work-carousel-indicators" aria-label="Projects carousel pagination" role="tablist">
+          <button type="button" class="work-dot active" data-index="0" role="tab" aria-selected="true" aria-label="Project 1: Lavora Clinic"></button>
+          <button type="button" class="work-dot" data-index="1" role="tab" aria-selected="false" aria-label="Project 2: Twin Tower"></button>
+          <button type="button" class="work-dot" data-index="2" role="tab" aria-selected="false" aria-label="Project 3: Flore Flower Shop"></button>
+          <button type="button" class="work-dot" data-index="3" role="tab" aria-selected="false" aria-label="Project 4: Amuse Cosmetics"></button>
+          <button type="button" class="work-dot" data-index="4" role="tab" aria-selected="false" aria-label="Project 5: Aura Sound DSP"></button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: OUR PRODUCTS (Powerful products to run your business) -->
+    <section class="products-section" id="products">
+      <div class="products-container">
+        
+        <!-- Centered Section Header -->
+        <div class="products-header">
+          <span class="products-label">Our Products</span>
+          <h2 class="products-title">Powerful products to<br>run your business.</h2>
+        </div>
+
+        <!-- 4-Card Horizontal Product Grid -->
+        <div class="products-grid">
+          
+          <!-- Card 1: Daniel POS -->
+          <div class="product-card" id="cardDanielPos">
+            <div class="product-thumb-container">
+              <div class="product-img-wrapper">
+                <img src="assets/product-pos.jpg?v=2" alt="Daniel POS System" class="product-thumb-img" loading="lazy">
+              </div>
+              <div class="product-badge-node">
+                <svg class="product-node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <line x1="2" y1="10" x2="22" y2="10"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-name">Daniel POS</h3>
+              <p class="product-desc">Advanced POS system for retail and restaurants.</p>
+              <a href="#contact" class="product-link" data-product="POS Solutions">
+                Learn More <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Daniel Dashboard -->
+          <div class="product-card" id="cardDanielDashboard">
+            <div class="product-thumb-container">
+              <div class="product-img-wrapper">
+                <img src="assets/product-dashboard.jpg?v=2" alt="Daniel Dashboard Analytics" class="product-thumb-img" loading="lazy">
+              </div>
+              <div class="product-badge-node">
+                <svg class="product-node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-name">Daniel Dashboard</h3>
+              <p class="product-desc">Analytics and reporting dashboard for businesses.</p>
+              <a href="#contact" class="product-link" data-product="Custom Business Systems">
+                Learn More <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Daniel CRM -->
+          <div class="product-card" id="cardDanielCrm">
+            <div class="product-thumb-container">
+              <div class="product-img-wrapper">
+                <img src="assets/product-crm.jpg?v=2" alt="Daniel CRM System" class="product-thumb-img" loading="lazy">
+              </div>
+              <div class="product-badge-node">
+                <svg class="product-node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-name">Daniel CRM</h3>
+              <p class="product-desc">Customer relationship management system.</p>
+              <a href="#contact" class="product-link" data-product="System Integrations">
+                Learn More <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Daniel CMS -->
+          <div class="product-card" id="cardDanielCms">
+            <div class="product-thumb-container">
+              <div class="product-img-wrapper">
+                <img src="assets/product-cms.jpg?v=2" alt="Daniel CMS Content Management" class="product-thumb-img" loading="lazy">
+              </div>
+              <div class="product-badge-node">
+                <svg class="product-node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-name">Daniel CMS</h3>
+              <p class="product-desc">Content management made simple and fast.</p>
+              <a href="#contact" class="product-link" data-product="Web Applications">
+                Learn More <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Centered CTA Button Below Grid -->
+        <div class="products-cta-wrap">
+          <button type="button" class="btn-view-all-products" id="viewAllProductsBtn">
+            View All Products
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: TESTIMONIALS (What our clients say about Daniel.) -->
+    <section class="testimonials-section" id="testimonials" aria-labelledby="testimonialsHeading">
+      <div class="testimonials-container">
+        
+        <!-- Header with centered eyebrow & title, and top-right navigation arrows -->
+        <div class="testimonials-header-row">
+          
+          <div class="testimonials-header-center">
+            <!-- Small Eyebrow Label -->
+            <div class="testimonials-eyebrow-badge">
+              <span class="eyebrow-text">TESTIMONIALS</span>
+            </div>
+
+            <!-- Main Title in Refined Serif -->
+            <h2 class="testimonials-title" id="testimonialsHeading">
+              What our clients say<br>about Daniel.
+            </h2>
+          </div>
+
+          <!-- Top-Right Navigation Controls (Circular Arrow Buttons) -->
+          <div class="testimonials-nav-controls" aria-label="Testimonial slider navigation">
+            <button type="button" class="testimonial-nav-btn prev" id="testimonialPrevBtn" aria-label="Previous testimonial">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button type="button" class="testimonial-nav-btn next" id="testimonialNextBtn" aria-label="Next testimonial">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- 3-Card Horizontal Testimonial Row -->
+        <div class="testimonials-grid" id="testimonialsTrack" role="region" aria-label="Client reviews">
+          
+          <!-- Card 1: Sara Ahmad -->
+          <article class="testimonial-card" id="testimonialCard1">
+            <div class="testimonial-card-top">
+              <!-- Quote Mark Icon -->
+              <div class="testimonial-quote-badge" aria-hidden="true">
+                <svg class="quote-svg-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.324 1.533-4.2 3.844-4.321 5.31h3.398v5.81H4.583zm9 0C12.553 16.227 12 15 12 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.324 1.533-4.2 3.844-4.321 5.31h3.398v5.81H13.583z"/>
+                </svg>
+              </div>
+
+              <!-- Quote Text -->
+              <p class="testimonial-quote-text">
+                Daniel delivered our project beyond our expectations. The design is stunning and the performance is outstanding.
+              </p>
+            </div>
+
+            <div class="testimonial-card-bottom">
+              <!-- Star Ratings (5 Stars) -->
+              <div class="testimonial-stars-row" aria-label="5 out of 5 stars">
+                <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              </div>
+
+              <!-- Client Profile Row -->
+              <div class="testimonial-client-row">
+                <img src="assets/client-sara.jpg" alt="Sara Ahmad, CEO at Lavora Clinic" class="client-avatar-img" width="48" height="48" loading="lazy">
+                <div class="client-meta">
+                  <h4 class="client-name">Sara Ahmad</h4>
+                  <p class="client-role">CEO, Lavora Clinic</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Mohammed Ali -->
+          <article class="testimonial-card" id="testimonialCard2">
+            <div class="testimonial-card-top">
+              <!-- Quote Mark Icon -->
+              <div class="testimonial-quote-badge" aria-hidden="true">
+                <svg class="quote-svg-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.324 1.533-4.2 3.844-4.321 5.31h3.398v5.81H4.583zm9 0C12.553 16.227 12 15 12 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.324 1.533-4.2 3.844-4.321 5.31h3.398v5.81H13.583z"/>
+                </svg>
+              </div>
+
+              <!-- Quote Text -->
+              <p class="testimonial-quote-text">
+                Professional team, great communication, and real results. Highly recommended for any business.
+              </p>
+            </div>
+
+            <div class="testimonial-card-bottom">
+              <!-- Star Ratings (5 Stars) -->
+              <div class="testimonial-stars-row" aria-label="5 out of 5 stars">
+                <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              </div>
+
+              <!-- Client Profile Row -->
+              <div class="testimonial-client-row">
+                <img src="assets/client-mohammed.jpg" alt="Mohammed Ali, Founder at Flore Shop" class="client-avatar-img" width="48" height="48" loading="lazy">
+                <div class="client-meta">
+                  <h4 class="client-name">Mohammed Ali</h4>
+                  <p class="client-role">Founder, Flore Shop</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Hawkar Omer -->
+          <article class="testimonial-card" id="testimonialCard3">
+            <div class="testimonial-card-top">
+              <!-- Quote Mark Icon -->
+              <div class="testimonial-quote-badge" aria-hidden="true">
+                <svg class="quote-svg-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.324 1.533-4.2 3.844-4.321 5.31h3.398v5.81H4.583zm9 0C12.553 16.227 12 15 12 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.324 1.533-4.2 3.844-4.321 5.31h3.398v5.81H13.583z"/>
+                </svg>
+              </div>
+
+              <!-- Quote Text -->
+              <p class="testimonial-quote-text">
+                The POS system from Daniel has completely transformed our business operations.
+              </p>
+            </div>
+
+            <div class="testimonial-card-bottom">
+              <!-- Star Ratings (5 Stars) -->
+              <div class="testimonial-stars-row" aria-label="5 out of 5 stars">
+                <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              </div>
+
+              <!-- Client Profile Row -->
+              <div class="testimonial-client-row">
+                <img src="assets/client-hawkar.jpg" alt="Hawkar Omer, Owner at Star Cafe" class="client-avatar-img" width="48" height="48" loading="lazy">
+                <div class="client-meta">
+                  <h4 class="client-name">Hawkar Omer</h4>
+                  <p class="client-role">Owner, Star Cafe</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SITE FOOTER: DANIEL LUXURY DIGITAL SOLUTIONS
+         Visual Direction: Dark Navy, 6-Column Grid, Clean Typography, SVG Branding
+         ========================================================================== -->
+    <footer class="site-footer" id="footer" aria-label="Site Footer">
+      <div class="footer-container">
+        
+        <div class="footer-main-grid">
+          
+          <!-- Column 1: DANIEL Brand Area (~24%) -->
+          <div class="footer-col footer-col-brand">
+            <a href="#" class="footer-brand-link" aria-label="DANIEL Home">
+              <img src="assets/daniel-logo.png" alt="DANIEL Logo" class="footer-brand-img" width="44" height="44">
+              <span class="footer-brand-text">DANIEL</span>
+            </a>
+            
+            <p class="footer-brand-desc">
+              We build digital solutions that empower businesses and create meaningful experiences.
+            </p>
+
+            <!-- Social Media Icons (Facebook, LinkedIn, Instagram, Threads) -->
+            <div class="footer-social-row" aria-label="Social Media Links">
+              <a href="https://facebook.com" class="footer-social-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95C18.05 21.45 22 17.19 22 12z"/>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+              </a>
+              <a href="https://instagram.com" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://threads.net" class="footer-social-btn" aria-label="Threads" target="_blank" rel="noopener noreferrer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.186 24C5.454 24 0 18.546 0 11.814 0 5.082 5.454 0 12.186 0c6.732 0 12.186 5.454 12.186 11.814 0 .61-.044 1.208-.13 1.794-.28 1.884-1.54 2.87-3.098 2.87-1.493 0-2.616-.867-2.825-2.227h-.057c-.896 1.637-2.637 2.44-4.57 2.44-3.14 0-5.328-2.215-5.328-5.464 0-3.374 2.485-5.594 5.795-5.594 2.053 0 3.737.896 4.473 2.418h.065V6.786h2.64v7.054c0 1.93.856 2.84 2.227 2.84.972 0 1.758-.553 1.942-1.748.065-.434.098-.888.098-1.344C21.6 6.643 17.37 2.4 12.186 2.4 6.78 2.4 2.4 6.78 2.4 12.186c0 5.405 4.38 9.786 9.786 9.786 2.87 0 5.458-1.22 7.275-3.193l1.71 1.71C18.89 22.82 15.69 24 12.186 24zm-1.895-9.35c1.865 0 3.32-1.356 3.32-3.277 0-1.92-1.455-3.277-3.32-3.277-1.875 0-3.32 1.357-3.32 3.277 0 1.92 1.445 3.277 3.32 3.277z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Company (~14%) -->
+          <div class="footer-col">
+            <h3 class="footer-heading">Company</h3>
+            <ul class="footer-links-list">
+              <li><a href="#about" class="footer-link">About Us</a></li>
+              <li><a href="#about" class="footer-link">Our Team</a></li>
+              <li><a href="#contact" class="footer-link footer-open-contact">Careers</a></li>
+              <li><a href="#blog" class="footer-link">Blog</a></li>
+              <li><a href="#contact" class="footer-link footer-open-contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Services (~18%) -->
+          <div class="footer-col">
+            <h3 class="footer-heading">Services</h3>
+            <ul class="footer-links-list">
+              <li><a href="#services" class="footer-link">Web Development</a></li>
+              <li><a href="#services" class="footer-link">Web Applications</a></li>
+              <li><a href="#services" class="footer-link">Mobile Apps</a></li>
+              <li><a href="#services" class="footer-link">Custom Systems</a></li>
+              <li><a href="#services" class="footer-link">POS Solutions</a></li>
+              <li><a href="#services" class="footer-link">UI/UX Design</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Products (~14%) -->
+          <div class="footer-col">
+            <h3 class="footer-heading">Products</h3>
+            <ul class="footer-links-list">
+              <li><a href="#products" class="footer-link">Daniel POS</a></li>
+              <li><a href="#products" class="footer-link">Daniel Dashboard</a></li>
+              <li><a href="#products" class="footer-link">Daniel CRM</a></li>
+              <li><a href="#products" class="footer-link">Daniel CMS</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 5: Support (~14%) -->
+          <div class="footer-col">
+            <h3 class="footer-heading">Support</h3>
+            <ul class="footer-links-list">
+              <li><a href="#contact" class="footer-link footer-open-contact">Help Center</a></li>
+              <li><a href="#services" class="footer-link">Documentation</a></li>
+              <li><a href="#home" class="footer-link">Terms of Service</a></li>
+              <li><a href="#home" class="footer-link">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 6: Contact Us (~16%) -->
+          <div class="footer-col footer-col-contact">
+            <h3 class="footer-heading">Contact Us</h3>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item">
+                <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <a href="mailto:info@daniel.com" class="footer-contact-link">info@daniel.com</a>
+              </li>
+              <li class="footer-contact-item">
+                <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <a href="tel:+9647501234567" class="footer-contact-link">+964 750 123 4567</a>
+              </li>
+              <li class="footer-contact-item">
+                <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span class="footer-contact-text">Erbil, Kurdistan, Iraq</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Bottom Copyright Row -->
+        <div class="footer-bottom-row">
+          <span class="footer-copyright">© 2026 Daniel. All rights reserved.</span>
+          <span class="footer-motto">Built with precision and purpose.</span>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Modal: Start Your Project / Consultation -->
+    <div class="modal-backdrop-overlay" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-card">
+        <button type="button" class="btn-modal-close" id="closeProjectModalBtn" aria-label="Close modal">✕</button>
+        <div class="modal-header-tag">Start Your Collaboration</div>
+        <h2 class="modal-title">Transform Your Vision With Daniel</h2>
+        <p class="modal-description">Select the solutions you need and tell us about your project goals. Our team will tailor a digital architecture proposal within 24 hours.</p>
+
+        <form id="projectInquiryForm">
+          <div class="modal-form-group">
+            <label class="modal-label">Select Daniel Solutions (Choose any):</label>
+            <div class="service-checkbox-grid">
+              <label class="service-option-label">
+                <input type="checkbox" name="services" value="Website Development" checked>
+                Website Development
+              </label>
+              <label class="service-option-label">
+                <input type="checkbox" name="services" value="Web Applications" checked>
+                Web Applications
+              </label>
+              <label class="service-option-label">
+                <input type="checkbox" name="services" value="Mobile Applications">
+                Mobile Applications
+              </label>
+              <label class="service-option-label">
+                <input type="checkbox" name="services" value="Custom Business Systems">
+                Custom Business Systems
+              </label>
+              <label class="service-option-label">
+                <input type="checkbox" name="services" value="POS Solutions">
+                POS Solutions
+              </label>
+              <label class="service-option-label">
+                <input type="checkbox" name="services" value="System Integrations">
+                System Integrations
+              </label>
+              <label class="service-option-label">
+                <input type="checkbox" name="services" value="UI/UX Design">
+                UI/UX Design
+              </label>
+              <label class="service-option-label">
+                <input type="checkbox" name="services" value="Audio Solutions">
+                Audio Solutions
+              </label>
+            </div>
+          </div>
+
+          <div class="modal-form-group">
+            <label class="modal-label" for="clientName">Your Name &amp; Company</label>
+            <input type="text" id="clientName" class="modal-input" placeholder="e.g. Elena Vance • Apex Robotics" required>
+          </div>
+
+          <div class="modal-form-group">
+            <label class="modal-label" for="clientEmail">Work Email</label>
+            <input type="email" id="clientEmail" class="modal-input" placeholder="elena@apex.io" required>
+          </div>
+
+          <div class="modal-form-group">
+            <label class="modal-label" for="projectBrief">Project Brief</label>
+            <textarea id="projectBrief" class="modal-textarea" placeholder="Tell us about the scope, timeline, and key performance goals..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-modal-submit" id="submitInquiryBtn">Submit Project Request →</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Drawer: View Our Work Showcase -->
+    <div class="work-drawer-overlay" id="workDrawerOverlay" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="work-drawer">
+        <button type="button" class="btn-modal-close" id="closeWorkDrawerBtn" aria-label="Close drawer">✕</button>
+        <div class="modal-header-tag">Curated Portfolio</div>
+        <h2 class="modal-title">Featured Work</h2>
+        <p class="modal-description">Explore selected case studies engineered by Daniel across enterprise web, mobile apps, POS, and digital sound architecture.</p>
+
+        <div class="work-card-item">
+          <div class="work-tag">Website &amp; Web Applications</div>
+          <div class="work-title">AAMUSE Global Commerce</div>
+          <div class="work-desc">Next-generation headless eCommerce and multi-region web platform handling over $40M annual volume with 99.99% availability.</div>
+        </div>
+
+        <div class="work-card-item">
+          <div class="work-tag">Mobile Applications &amp; UI/UX</div>
+          <div class="work-title">Lumina Wealth Mobile</div>
+          <div class="work-desc">Native iOS and Android digital banking experience featuring biometrics, real-time portfolio rebalancing, and millisecond chart streaming.</div>
+        </div>
+
+        <div class="work-card-item">
+          <div class="work-tag">POS Solutions &amp; Custom Systems</div>
+          <div class="work-title">Flare Retail POS Ecosystem</div>
+          <div class="work-desc">Cloud-synchronized point-of-sale network across 240 retail locations with automated offline fallback and inventory neural forecasting.</div>
+        </div>
+
+        <div class="work-card-item">
+          <div class="work-tag">System Integrations</div>
+          <div class="work-title">Tech Torch Enterprise Bridge</div>
+          <div class="work-desc">Resilient microservices mesh connecting SAP, Salesforce, and custom ERP pipelines with zero message loss and encrypted telemetry.</div>
+        </div>
+
+        <div class="work-card-item">
+          <div class="work-tag">Audio Solutions</div>
+          <div class="work-title">AuraSpatial 3D Audio Engine</div>
+          <div class="work-desc">Spatial audio DSP engine and sound branding suite for immersive virtual showrooms, hardware acoustics, and enterprise web applications.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="main.js?v=9"></script>
+</body>
+</html>
